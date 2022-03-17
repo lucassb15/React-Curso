@@ -12,7 +12,7 @@ export default (_) => (
     <h1>Fundamentos React</h1>
 
     <div className="CardsContainer">
-    <Card titulo="#04 - Desafio Aleatório">
+    <Card titulo="#04 - Random Challenge">
     <Random min={1} max={60} />
     </Card>
     <Card titulo="#03 - Fragments">
