@@ -1,7 +1,8 @@
-import './App.css'
+import "./App.css";
 import React from "react";
 
-import Family from './components/basicos/Family';
+import Family from "./components/basicos/Family";
+import FamilyMember from "./components/basicos/FamilyMember";
 import Card from "./components/layout/Card";
 import Random from "./components/basicos/Random";
 import First from "./components/basicos/First";
@@ -13,23 +14,29 @@ export default (_) => (
     <h1>Fundamentos React</h1>
 
     <div className="CardsContainer">
-    <Card titulo="#04 - Family Component" color='#4F0A1B'>
-    <Family sobrenome="Soares" />
-    </Card>
-    <Card titulo="#04 - Random Challenge" color='#89388C'>
-    <Random min={1} max={60} />
-    </Card>
-    <Card titulo="#03 - Fragments" color='#DC3965'>
-    <Fragments />
-    </Card>
-    <Card titulo="#02 - Parameters" color='#EFB837'>
-    <Parameters titulo="Situação do Aluno" aluno="Lucas Soares" nota={9.2} />
-    </Card>
-    <Card titulo="#01 - First component" color='#5ABFB8'>
-    <First></First>
-    </Card>
+      <Card titulo="#05 - Family Components" color="#4F0A1B">
+        <Family sobrenome="Soares">
+          <FamilyMember nome="Lucas" />
+          <FamilyMember nome="Charles" />
+          <FamilyMember nome="Pedro" />
+        </Family>
+      </Card>
+      <Card titulo="#04 - Random Challenge" color="#89388C">
+        <Random min={1} max={60} />
+      </Card>
+      <Card titulo="#03 - Fragments" color="#DC3965">
+        <Fragments />
+      </Card>
+      <Card titulo="#02 - Parameters" color="#EFB837">
+        <Parameters
+          titulo="Situação do Aluno"
+          aluno="Lucas Soares"
+          nota={9.2}
+        />
+      </Card>
+      <Card titulo="#01 - First component" color="#5ABFB8">
+        <First></First>
+      </Card>
     </div>
-    
-   
   </div>
 );
