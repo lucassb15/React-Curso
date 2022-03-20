@@ -7,7 +7,7 @@ export default function Parameters(props) {
       <h2>{props.titulo} </h2>
       <p>
         <strong>{props.aluno} </strong>
-        tem nota
+        tem nota: 
         <strong> {props.nota} </strong>e está
         <strong> {status} </strong>!
       </p>

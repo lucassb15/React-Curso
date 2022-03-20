@@ -16,7 +16,7 @@ export default (_) => (
     <div className="CardsContainer">
       <Card titulo="#05 - Family Components" color="#4F0A1B">
         <Family sobrenome="Soares">
-          <FamilyMember nome="Lucas" />
+          <FamilyMember nome="Lucaz" />
           <FamilyMember nome="Charles" />
           <FamilyMember nome="Pedro" />
         </Family>
